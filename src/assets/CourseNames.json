@@ -1,0 +1,34 @@
+[   
+    
+    {"name": "UI/UX",
+ "id": "ui_ux-design"
+
+},
+    
+    
+    {"name": "Fullstack Web Development",
+"id": "fullstack-development"
+},
+
+    {"name": "Mobile App Development",
+"id": "mobile-app-development"
+},
+    
+    {"name": "Frontend Web Development",
+"id": "frontend-development"
+},
+      
+    {"name": "Backend Development",
+ "id": "backend-development"
+},
+    
+    {"name": "Graphic Design",
+ "id": "graphic-design"
+},
+  
+{"name": "Video Editing",
+"id": "video-editing"
+}
+    
+
+]
