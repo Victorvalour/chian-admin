@@ -46,7 +46,7 @@ console.log(date)
         
         className="p-0.5 w-16 h-16"
       /> 
-      <div onClick={() => navigate(`/`)}>
+      <div onClick={() => navigate(`/homepage`)}>
         <p> &lt; Home</p>
       </div>
 

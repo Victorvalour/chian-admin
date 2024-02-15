@@ -12,11 +12,16 @@ export const AuthContextProvider = ({ children }) => {
     //const sudoId = UserId() 
     const [isPending, setIsPending] = useState()
 
+    
+
     const login = () => {
+
         setUser(true)
         navigate('/homepage')
+        
     }
 
+    
     
 
   

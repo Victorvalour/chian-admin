@@ -17,7 +17,7 @@ const adminPassword = "#chiantech@"
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
-    const [isCorrect, setIsCorrect] = useState("")
+    const [isNotCorrect, setIsNotCorrect] = useState()
 
   const  handleEmailChange = (e) => {
     setEmail(e.target.value)
@@ -32,10 +32,13 @@ const adminPassword = "#chiantech@"
     const handleSubmit = async (e) => {
         e.preventDefault()
         if (email == adminEmail && password == adminPassword) {
+            
             console.log("correct password")
             await login()
+        
         } else {
             console.log("Is not correct")
+            setIsNotCorrect(true)
         }
     }
 
@@ -59,6 +62,8 @@ const adminPassword = "#chiantech@"
                   <div>
                       <label htmlFor="password" className="block mb-2 text-sm font-medium  text-white">Password</label>
                       <input onChange={handlePasswordChange} type="password" name="password" id="password" placeholder="••••••••" className="border sm:text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" required="" />
+
+                      {isNotCorrect && <p className='text-red-600'>Incorrect Email/Password</p>}
                   </div>
                   <div className="flex items-center justify-between">
                       <div className="flex items-start">

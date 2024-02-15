@@ -80,7 +80,7 @@ const handleSubmit = async (e) => {
         className="p-0.5 w-16 h-16"
       />
       <div 
-      onClick={() => navigate(`/`)}
+      onClick={() => navigate(`/homepage`)}
       className='hover:text-blue-700 cursor-pointer'>
         <p>&lt; Home</p>
       </div>
